@@ -5,7 +5,13 @@
 
   <div class="field">
     <%= f.label :email %><br />
+    <!--Only one can have autofocus-->
     <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
