@@ -6,3 +6,8 @@ body {
   background-color: black;
   color: white;
 }
+
+//apply to any components with class top that is a link
+.top a {
+  color: red;
+}
