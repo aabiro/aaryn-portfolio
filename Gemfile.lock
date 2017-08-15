@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/aabiro/aaryn_biro_view_tool
+  revision: 6f05050ab85a39cd823d7cb06afdd420cb50fdc8
+  specs:
+    aaryn_biro_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -182,6 +188,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aaryn_biro_view_tool!
   bootstrap (~> 4.0.0.beta)
   byebug
   coffee-rails (~> 4.2)

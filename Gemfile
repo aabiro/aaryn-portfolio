@@ -54,3 +54,4 @@ gem 'devise', '~> 4.3'
 
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'jquery-rails'
+gem 'aaryn_biro_view_tool', git: 'https://github.com/aabiro/aaryn_biro_view_tool'
