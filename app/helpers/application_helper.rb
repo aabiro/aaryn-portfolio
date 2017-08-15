@@ -16,4 +16,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_generator
+    AarynBiroViewTool::Renderer.copyright 'Aaryn Biro', 'All rights reserved.'
+  end
 end
