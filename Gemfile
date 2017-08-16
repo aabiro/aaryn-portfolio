@@ -58,3 +58,5 @@ gem 'aaryn_biro_view_tool', git: 'https://github.com/aabiro/aaryn_biro_view_tool
 
 #get gems from rubygems.org!, not github, so that the version info is there
 gem 'petergate', '~> 1.7', '>= 1.7.5'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
