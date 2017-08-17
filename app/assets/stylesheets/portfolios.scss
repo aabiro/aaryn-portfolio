@@ -67,6 +67,10 @@ body {
   font-size: 85%;
 }
 
+.column-md-4 {
+   margin-left: 50px;
+}
+
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -74,4 +78,10 @@ footer {
 
 footer p {
   margin-bottom: .25rem;
+}
+
+/* Custom Styles */
+
+.portfolio-form {
+  padding: 20px;
 }
