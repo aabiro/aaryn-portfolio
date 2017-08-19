@@ -4,7 +4,7 @@ class Portfolio < ApplicationRecord
   #for front end functionality
   accepts_nested_attributes_for :technologies,
       #data validation for nested technologies
-      reject_if: lambda { |attrs| attrs['name'].blank? }
+      reject_if: lambda { |attrs| attrs['name'].blank? }, allow_destroy: true
 
   validates_presence_of :title, :body
 
