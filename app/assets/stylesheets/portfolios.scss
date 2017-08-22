@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "jquery-ui";
+@import "font-awesome";
 @import "gritter";
 
 body {
@@ -82,4 +83,14 @@ footer p {
 
 .portfolio-container {
   padding-top: 30px;
+}
+
+.social-links li {
+  display: inline-block;
+  font-size: 2.5em;
+  padding-right: 20px;
+}
+
+.social-links ol {
+  list-style: none;
 }

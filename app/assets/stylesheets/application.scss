@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 @import "gritter";
 
 /*
@@ -219,10 +220,25 @@ body {
   margin: 20px;
 }
 
+.tech-row {
+  padding-bottom: 50px;
+}
+
 .tech-news a {
   color: green;
 }
 
 .tech-news > .card {
   padding: 20px;
+}
+
+.social-links li {
+  display: inline-block;
+  font-size: 2.5em;
+  padding: 20px;
+}
+
+.social-links ol {
+  list-style: none;
+  vertical-align: bottom;
 }
