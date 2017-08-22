@@ -15,6 +15,8 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    @blog = Blog.includes(:comments).friendly.find(params[:id])
+    @comment = Comment.new
     @page_title = @blog.title
     #make a keywords file later
     @seo_keywords = @blog.body
@@ -65,10 +67,10 @@ class BlogsController < ApplicationController
   end
 
   def toggle_status
-    if @blog.draft?
-      @blog.published!
-    elsif @blog.published?
-      @blog.draft!
+    if @blog.Draft?
+      @blog.Published!
+    elsif @blog.Published?
+      @blog.Draft!
     end
   redirect_to blogs_url, notice: 'Post has been updated.'
   end
