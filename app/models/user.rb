@@ -16,6 +16,9 @@ class User < ApplicationRecord
   #make sure name is supplied
   validates_presence_of :name
 
+  #if a user deletes account, their comments will be deleted as well
+  has_many :comments, dependent: :destroy
+
   def first_name
     self.name.split.first
   end
