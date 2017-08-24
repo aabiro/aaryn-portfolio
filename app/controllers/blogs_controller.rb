@@ -12,7 +12,7 @@ class BlogsController < ApplicationController
     if logged_in?(:site_admin)
       @blogs = Blog.recent.page(params[:page]).per(5)
     else
-      @blogs = Blog.Published.recent.page(params[:page]).per(5)
+      @blogs = Blog.published.recent.page(params[:page]).per(5)
     end
       @page_title = "My Portfolio Blog"
   end
@@ -20,7 +20,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    if logged_in?(:site_admin) || @blog.Published?
+    if logged_in?(:site_admin) || @blog.published?
       @blog = Blog.includes(:comments).friendly.find(params[:id])
       @comment = Comment.new
       @page_title = @blog.title
@@ -76,10 +76,10 @@ class BlogsController < ApplicationController
   end
 
   def toggle_status
-    if @blog.Draft?
-      @blog.Published!
-    elsif @blog.Published?
-      @blog.Draft!
+    if @blog.draft?
+      @blog.published!
+    elsif @blog.published?
+      @blog.draft!
     end
   redirect_to blogs_url, notice: 'Post has been updated.'
   end
