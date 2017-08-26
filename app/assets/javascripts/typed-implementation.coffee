@@ -1,7 +1,7 @@
 ready = ->
   Typed.new '.element',
     strings: [
-      'I hope you enjoy my website.'
+      'Thanks for visiting my website.'
       "Please browse through my portfolio and blog to learn more about me."
     ]
     typeSpeed: 0
