@@ -72,8 +72,8 @@ h6, .h6 {
 /* Padding for spacing */
 .inner {
   padding: 2rem;
+  font-size: 1.2rem;
 }
-
 
 /*
  * Header
@@ -156,6 +156,7 @@ h6, .h6 {
   .mastfoot {
     position: fixed;
     bottom: 0;
+    height: 75px;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
